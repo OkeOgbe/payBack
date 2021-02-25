@@ -1,0 +1,12 @@
+.hero {
+    min-height: 70vh;
+    background-image: url('../public/images/heroBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heroImgHolder {
+    max-width: 500px;
+    margin: 0 auto;
+}

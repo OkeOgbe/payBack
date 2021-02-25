@@ -1,0 +1,111 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Sora:wght@400;500;600&display=swap');
+:root {
+    --headerFont: 'Sora', sans-serif;
+    --textFont: 'Poppins', sans-serif;
+    --defaultPurple: #410A67;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--headerFont);
+}
+
+a,
+button,
+input,
+label,
+p,
+span {
+    font-family: var(--textFont) !important;
+}
+a,
+a:hover {
+    text-decoration: none !important;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.text_is_bold {
+    font-weight: bold;
+}
+
+.text_is_purple {
+    color: var(--defaultPurple) !important;
+}
+.text_is_white,
+.text_is_white:hover {
+    color: #ffff;
+}
+
+.alignOnly {
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionHead {
+    font-size: 40px;
+}
+
+.sectionHead--mid {
+    font-size: 30px;
+}
+
+.sectionText {
+    font-size: 17px;
+}
+
+.sectionText--small {
+    font-size: 14px;
+}
+
+.sectionHeight {
+    min-height: 70vh;
+}
+
+.v_align {
+    text-align: center;
+}
+
+.btn--whiteBorder {
+    padding: 0.6em 2.5em;
+    background: transparent;
+    border: 2px solid #ffff;
+    border-radius: 30px;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.btn--whiteBorder:hover {
+    background: #fff;
+    color: var(--defaultPurple);
+}
+
+.btn--purpleBg {
+    padding: 0.6em 2.5em;
+    background: var(--defaultPurple);
+    border-radius: 30px;
+    color: #fff;
+    border: none;
+}
+@media (max-width: 766px) {
+    .sectionHeight {
+        min-height: 55vh;
+    }
+}
